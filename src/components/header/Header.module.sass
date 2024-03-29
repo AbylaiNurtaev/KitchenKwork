@@ -36,40 +36,48 @@
                 width: 50px
                 border-radius: 50%
 
-        .link
-            text-decoration: none
-            color: black
-            padding: 35px 0
-            font-size: 20px
-            transition: .3s
 
-            .subLinks
-                opacity: 0
-                position: absolute
+        .navigation
+            display: flex
+            flex-direction: row
 
-                display: none
-                flex-direction: column
+            gap: 25px
+            .linkContainer
 
-                justify-content: center
-                align-items: flex-start
-
-                gap: 20px
-                background: white
-                font-size: 20px
-                
-
-                .sublink
+                .link
                     text-decoration: none
                     color: black
-
-            &:hover 
-                color: coral
+                    padding: 35px 0
+                    font-size: 20px
+                    transition: .3s
 
                 .subLinks
-                    display: flex
-                    margin-top: 25px
-                    animation: up .5s 
-                    opacity: 1
+                    opacity: 0
+                    position: absolute
+
+                    display: none
+                    flex-direction: column
+
+                    justify-content: center
+                    align-items: flex-start
+
+                    gap: 20px
+                    background: white
+                    font-size: 20px
+                        
+
+                    .sublink
+                        text-decoration: none
+                        color: black
+
+                &:hover 
+                    color: coral
+
+                    .subLinks
+                        display: flex
+                        margin-top: 25px
+                        animation: up .5s 
+                        opacity: 1
 
                     
 
