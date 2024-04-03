@@ -6,17 +6,22 @@
         "sublinks": [
             {
                 "path": "/kitchen/sovrkuhni",
-                "name": "Современные кухни"
+                "name": "Современные"
             },
             {
-                "path": "/kitchen/sovrklassika",
-                "name": "Современная классика"
+                "path": "/kitchen/classic",
+                "name": "Неоклассика"
             },
             {
-                "path": "/kitchen/sovrdesi",
-                "name": "Дизайнерские кухни"
+                "path": "/kitchen/designs",
+                "name": "Дизайнерские"
             }
         ]
+    },
+    {
+        "id": 2.2,
+        "mainName": "Фасады",
+        "mainLink": "/fasads"
     },
     {
         "id": 2,
@@ -24,93 +29,41 @@
         "mainLink": "/furniture",
         "sublinks": [
             {
-                "path": "/furniture/sovrkuhni",
-                "name": "Современные кухни"
+                "path": "/furniture/shkafy",
+                "name": "Шкафы"
             },
             {
-                "path": "/kitchen/sovrklassika",
-                "name": "Современная классика"
+                "path": "/kitchen/wardrobe",
+                "name": "Гардеробные"
             },
             {
-                "path": "/kitchen/sovrdesi",
-                "name": "Дизайнерские кухни"
+                "path": "/kitchen/tv-zone",
+                "name": "ТВ-зоны"
+            },
+            {
+                "path": "/kitchen/children",
+                "name": "Детские"
             }
         ]
     },
     {
         "id": 3,
-        "mainName": "Корпусная мебель",
-        "mainLink": "/furniture",
-        "sublinks": [
-            {
-                "path": "/furniture/sovrkuhni",
-                "name": "Современные кухни"
-            },
-            {
-                "path": "/kitchen/sovrklassika",
-                "name": "Современная классика"
-            },
-            {
-                "path": "/kitchen/sovrdesi",
-                "name": "Дизайнерские кухни"
-            }
-        ]
+        "mainName": "Портфолио",
+        "mainLink": "/portfolio"
     },
     {
         "id": 4,
-        "mainName": "Корпусная",
-        "mainLink": "/furniture",
-        "sublinks": [
-            {
-                "path": "/furniture/sovrkuhni",
-                "name": "Современные кухни"
-            },
-            {
-                "path": "/kitchen/sovrklassika",
-                "name": "Современная классика"
-            },
-            {
-                "path": "/kitchen/sovrdesi",
-                "name": "Дизайнерские кухни"
-            }
-        ]
+        "mainName": "Дизайнерам",
+        "mainLink": "/designers"
     },
     {
         "id": 5,
-        "mainName": "something",
-        "mainLink": "/furniture",
-        "sublinks": [
-            {
-                "path": "/furniture/sovrkuhni",
-                "name": "Современные кухни"
-            },
-            {
-                "path": "/kitchen/sovrklassika",
-                "name": "Современная классика"
-            },
-            {
-                "path": "/kitchen/sovrdesi",
-                "name": "Дизайнерские кухни"
-            }
-        ]
+        "mainName": "О нас",
+        "mainLink": "/aboutUs"
     },
     {
         "id": 6,
-        "mainName": "text",
-        "mainLink": "/furniture",
-        "sublinks": [
-            {
-                "path": "/furniture/sovrkuhni",
-                "name": "Современные кухни"
-            },
-            {
-                "path": "/kitchen/sovrklassika",
-                "name": "Современная классика"
-            },
-            {
-                "path": "/kitchen/sovrdesi",
-                "name": "Дизайнерские кухни"
-            }
-        ]
+        "mainName": "Контакты",
+        "mainLink": "/contacts"
     }
 ]

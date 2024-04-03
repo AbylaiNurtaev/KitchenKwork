@@ -1,0 +1,19 @@
+@mixin desktop()
+    @media ( max-width: 1440px )
+        @content  
+
+@mixin laptop()
+    @media ( max-width: 1024px )
+        @content  
+
+@mixin tablet()
+    @media ( max-width: 768px )
+        @content  
+
+@mixin mobile_L()
+    @media ( max-width: 420px )
+        @content  
+
+@mixin mobile_M()
+    @media ( max-width: 340px )
+        @content  

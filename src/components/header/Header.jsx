@@ -37,11 +37,11 @@ function Header() {
                 <div key={el.id} className={s.linkContainer}>
                 <Link to={el.mainLink} className={s.link}>{el.mainName}</Link>
                   <div className={s.subLinks}>
-                    {el.sublinks.map((link, index) => {
+                    {el.sublinks ? el.sublinks.map((link, index) => {
                       return (
                         <Link key={index} to={link.path} className={s.sublink}>{link.name}</Link>
                       )
-                    })}
+                    }) : null}
                   </div> 
                 </div>
               )
