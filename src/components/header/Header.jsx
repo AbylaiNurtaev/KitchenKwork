@@ -21,6 +21,7 @@ function Header() {
     setBurgerMenu(prev => !prev)
   }
 
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => {
@@ -59,17 +60,17 @@ function Header() {
         </div>
 
 
-        <div className={s.contacts}>
+        {/* <div className={s.contacts}>
           <img className={s.phoneIcon} src={phoneIcon} alt="phone" />
           <p className={s.phoneNumber}>+7 (778) 464-25-56 </p>
           <img className={s.instIcon} src="https://cdn-icons-png.flaticon.com/512/25/25684.png" alt="inst" />
           <img className={s.telegramIcon} src={telegram} alt="telegram" />
           <img className={s.instIcon} src="https://play-lh.googleusercontent.com/IV105amnP9cWi05dNA0VmTAV0NWejwLGYhemUWSZnTCoBytF3zmGzyTwtBwY9U9eb2M" alt="telegram" />
-        </div>
+        </div> */}
 
 
         <div className={s.burgerMenu}>
-          <div className={burgerMenu ? s.opacity : s.nonOpacity}></div>
+          <div id='pfd' className={burgerMenu ? s.opacity : s.nonOpacity}></div>
           <img onClick={toggleBurgerMenu} src={ burgerMenu ? "https://cdn-icons-png.flaticon.com/512/7124/7124232.png" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"} alt="-" />
           <div className={burgerMenu ? s.showedMenu : s.hiddenMenu}>
             <div className={s.navigation}>

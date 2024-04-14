@@ -1,0 +1,355 @@
+tripleContainerElement
+    
+@mixin tripleContainerTablet
+    width: 500px
+    height: 500px
+
+    img
+        width: 400px
+        height: 320px
+
+    div
+        width: 400px
+
+        h2
+            font-size: 28px
+
+        p
+            font-size: 20px
+
+@mixin tripleContainerMobile
+    width: 400px
+    height: 400px
+
+    img
+        width: 350px
+        height: 260px
+
+    div
+        width: 350px
+
+        h2
+            font-size: 24px
+
+        p
+            font-size: 17px
+    
+@mixin mobile_M
+    width: 300px
+    height: 350px
+
+    img
+        width: 270px
+        height: 200px
+
+    div
+        width: 270px
+
+        h2
+            font-size: 24px
+
+        p
+            font-size: 17px
+
+
+@media  ( max-width: 1440px )
+    .container
+        .middleSide
+            .graySide
+                height: 30vh
+
+                .blocks
+                    .block
+                        height: 17vw
+                        justify-content: center
+                        gap: 20px
+                        img
+                            width: 15vw
+
+        .messageSide
+            align-items: center
+
+
+@media ( max-width: 1024px )
+    .container
+
+        
+        .middleSide
+            .parText
+                width: 90vw
+
+            .graySide
+                height: 85vh
+                .blocks
+                    flex-direction: column
+                    gap: 40px
+
+                    .block
+                        width: 80vw
+                        height: 35vh
+
+                        img
+                            width: 50%
+                            height: 90%
+
+                        div
+                            h2
+                               width: 30vw
+                               font-size: clamp(13px, 3.7vw, 50px) 
+
+                            p
+                                width: 30vw
+                                font-size: clamp(13px, 2.2vw, 25px)
+        .messageSide
+            width: 100%
+            .bigText
+                font-size: 27px
+
+            .parText
+                text-align: center
+
+            button
+                margin-top: 20px
+
+
+        .tripleContainer
+            height: auto
+            padding: 100px
+            
+            .wrapper
+                flex-direction: column
+                gap: 50px
+                
+
+                .leftSide
+                    width: 650px
+                    height: 650px
+
+                    img
+                        width: 500px
+                        height: 500px   
+
+                    div
+                        width: 500px
+
+                        h2
+                            font-size: 35px
+
+                        p
+                            font-size: 20px
+
+                .rightSide
+                    height: auto
+                    gap: 50px
+
+                    .topBlock
+                        width: 650px
+                        height: 650px
+
+                        img
+                            width: 500px
+                            height: 500px   
+
+                        div
+                            width: 500px
+
+                            h2
+                                font-size: 35px
+
+                            p
+                                font-size: 20px
+                        flex-direction: column
+                        width: 650px
+                
+                    .bottomBlock
+                        width: 650px
+                        height: 650px
+                        flex-direction: column
+
+                        img
+                            width: 500px
+                            height: 500px   
+
+                        div
+                            width: 500px
+
+                            h2
+                                font-size: 35px
+
+                            p
+                                font-size: 20px
+                        img
+                            height: 400px
+                            order: 1
+
+                        div
+                            order: 2
+                
+        .seeMore
+            .blocks
+                flex-direction: column
+
+                .block
+                    img
+                        width: 500px
+
+
+@media (max-width: 768px)
+    .container
+        .mainPhoto
+            width: 100%
+
+        .countPrice
+            p
+                width: 90%
+                margin: 20px
+                text-align: center
+
+        .middleSide
+            .blocks
+                gap: 10vw
+
+                .imageBlock
+                    .name
+                        width: 35vw
+                        font-size: 17px
+                        text-align: center
+                    .description
+                        font-size: 12px
+                        width: 35vw
+                        text-align: center
+
+            .graySide
+                
+                .blocks
+                        gap: 40px
+
+                        .block
+                            width: 90vw
+                            height: 250px
+
+        .messageSide
+            .bigText
+                width: 90vw
+                font-size: 21.5px
+                text-align: center
+
+            .parText
+                text-align: center
+
+        
+        .tripleContainer
+            .wrapper
+                .leftSide
+                    @include tripleContainerTablet
+                    
+
+                .rightSide
+                    .topBlock
+                        @include tripleContainerTablet
+                        
+
+                    .bottomBlock
+                        @include tripleContainerTablet
+                        
+    
+            
+@media ( max-width: 560px ) 
+    .container
+
+        
+        .countPrice
+            height: 250px
+
+            button 
+                height: 50px
+
+        .middleSide
+            .main
+                font-size: 24px
+                width: 95vw
+                text-align: center
+                margin-top: 0px
+
+            .blocks
+                flex-direction: column
+                .imageBlock
+                    img
+                        width: 70vw
+
+                    .name
+                        width: 70vw
+                        font-size: 22px
+
+                    .description
+                        width: 70vw
+                        font-size: 15px
+
+
+            .graySide
+                height: 800px
+                .blocks
+                    .block
+                        flex-direction: column
+                        height: 330px
+
+                        img
+                            width: 90%
+                            height: 220px
+
+                        div
+                            
+                            h2
+                                width: 100%
+                                font-size: 21px
+                                margin: 0
+                                text-align: center
+
+                            p
+                                width: 100%
+                                text-align: center
+                                margin: 10px 0 0 0
+
+
+        .messageSide
+            height: 300px
+
+
+        .tripleContainer
+            .wrapper
+                .leftSide
+                    @include tripleContainerMobile
+                    
+                .rightSide
+                    .topBlock
+
+                        @include tripleContainerMobile
+                    .bottomBlock
+                        @include tripleContainerMobile
+        
+        .seeMore
+            .blocks
+                .block
+                    img
+                        width: 350px
+
+
+@media (max-width: 420px) 
+    .container
+        .tripleContainer
+            .wrapper
+                .leftSide
+                    @include mobile_M
+                    
+                .rightSide
+                    .topBlock
+                        @include mobile_M
+                    .bottomBlock
+                        @include mobile_M
+                        
+
+        .seeMore
+            .blocks
+                .block
+                    img
+                        width: 300px

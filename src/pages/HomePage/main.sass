@@ -1,0 +1,329 @@
+@font-face 
+  font-family: 'MyFont'
+  src: url("../../fonts/header.otf") format("truetype")
+
+$my-font: 'MyFont', sans-serif
+
+@keyframes buttonMoving
+    0%
+        transform: translateY(-5px)
+    50%
+        transform: translateY(0px)
+    100%
+        transform: translateY(-5px)
+        
+@mixin centerFlex
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+    
+    
+.container
+    margin-top: 50px
+    @include centerFlex
+    
+
+    width: 100vw
+    overflow-x: hidden
+
+
+    .mainPhoto
+        width: 70%
+        z-index: -1
+
+    .countPrice
+        @include centerFlex
+        font-family: $my-font
+        .mainText
+            margin: 0
+            margin-top: 50px
+            
+        button
+            width: 300px
+            height: 50px
+
+            background: #ffab74  
+            font-size: 18px
+
+            border: none
+            border-radius: 7px
+            color: white
+
+            font-weight: bold
+            cursor: pointer
+            margin-top: 10px
+            border: 2px solid #ffab74
+
+            animation: buttonMoving 2s ease-in-out infinite
+            transition: .3s
+            box-shadow: 0px 0px 20px 1px #ffab74 
+
+            &:hover
+                transition: .3s
+                background: none
+                color: coral
+                box-shadow: 0px 0px 50px 5px #ffab74 
+
+    
+
+    .middleSide
+        margin-top: 100px
+        @include centerFlex
+        font-family: $my-font
+        
+        .main
+            font-size: clamp(18px, 2vw, 35px)
+        .parText
+            text-align: center
+            width: 90%
+        .blocks
+            @include centerFlex
+            flex-direction: row
+            gap: 90px
+            cursor: pointer
+
+            .imageBlock
+                @include centerFlex
+                align-items: flex-start
+                margin-top: 30px
+                transition: .3s
+                gap: 10px
+
+                &:hover
+                    transform: translateY(-10px)
+                    transition: .3s
+                img
+                    width: 35vw
+
+                .name
+                    font-weight: bolder
+                    font-size: 24px
+                    
+                
+        .graySide
+            background: #edeeef 
+            width: 100vw
+            height: 40vh
+            margin-top: 10vh
+            @include centerFlex
+                
+
+            .blocks
+                @include centerFlex
+                flex-direction: row
+                gap: 50px
+                
+
+                .block
+                    @include centerFlex
+                    flex-direction: row
+                    justify-content: space-around
+                    background: white
+
+
+                    width: 38vw
+                    height: 15vw
+                    transition: .3s
+
+                    &:hover
+                        transform: translateY(-10px)
+                        transition: .3s
+                        
+
+                    img
+                        width: 17vw
+                        object-fit: cover
+                        height: 12vw
+
+                    div
+                        h2
+                            width: 12vw
+                            font-size: clamp(13px, 2vw, 25px)
+
+                        p
+                            width: 15vw
+                            font-size: clamp(13px, 1.1vw, 25px)
+
+
+
+
+    .messageSide
+        @include centerFlex
+        height: 25vh
+
+        align-items: flex-start
+        width: 73%
+        font-family: $my-font
+
+        .bigText
+            margin: 0
+            padding: 0
+
+        .parText
+            text-align: left
+
+        
+
+        button
+            width: 200px
+            height: 50px
+            color: white
+            background-color: #212529
+
+            border: none
+            font-family: $my-font
+            font-size: 16px
+            cursor: pointer
+
+
+    .tripleContainer
+        font-family: $my-font
+        background: #edeeef 
+        height: 40vw
+        width: 100vw
+        @include centerFlex
+        
+
+        .wrapper
+            width: 73vw
+            @include centerFlex
+            flex-direction: row
+            gap: 40px
+
+            .leftSide
+                cursor: pointer
+                @include centerFlex
+                background: white
+                width: 30vw
+                height: 30vw
+                gap: 20px
+                transition: .3s
+
+                &:hover
+                    transform: translateY(-10px)
+                    transition: .3s
+
+                img
+                    width: 24vw
+                    height: 21vw
+                    object-fit: cover
+                div
+                    @include centerFlex
+                    align-items: flex-start
+                    width: 24vw
+
+                    h2
+                        margin: 0
+                        padding: 0
+
+                    p
+                        margin: 10px 0 10px 0 
+                        font-size: clamp(10px, 1vw, 35px)
+                    
+
+
+            .rightSide
+                height: 30vw
+                @include centerFlex
+                justify-content: space-between
+                .topBlock
+                    cursor: pointer
+                    @include centerFlex
+                    flex-direction: row
+                    width: 30vw
+                    height: 13vw
+                    background: white
+                    gap: 20px
+                    transition: .3s
+
+                    &:hover
+                        transform: translateY(-10px)
+                        transition: .3s
+                    
+                    img
+                        object-fit: cover
+                        width: 11vw
+                        margin-left: 1vw
+
+                    div
+                        
+                        h2
+                            margin: 0
+                            padding: 0
+                            font-size: clamp(10px, 1.5vw, 35px)
+
+                        p
+                            font-size: clamp(10px, 1vw, 35px)
+
+                .bottomBlock
+                    cursor: pointer
+                    @include centerFlex
+                    flex-direction: row
+                    width: 30vw
+                    height: 13vw
+                    background: white
+                    gap: 20px
+                    justify-content: space-around
+                    transition: .3s
+
+                    &:hover
+                        transform: translateY(-10px)
+                        transition: .3s
+
+                    img
+                        object-fit: cover
+                        width: 12vw
+                        order: 2
+
+                    div
+                        order: 1
+                        h2
+                            font-size: clamp(10px, 1.5vw, 35px)
+
+                        p
+                            font-size: clamp(10px, 1vw, 35px)
+
+    .seeMore
+        width: 100vw
+        @include centerFlex
+        
+        .blocks
+            @include centerFlex
+            flex-direction: row
+            gap: 40px
+            margin-top: 20px
+        
+
+            .block
+                @include centerFlex
+                align-items: flex-start
+                img
+                    width: 19vw
+
+                h2
+                    margin: 0
+                    margin-top: 15px
+                    padding: 0
+                    
+        button
+            width: 200px
+            height: 40px
+
+            background: white
+            border: 1px solid #212529
+            color: #212529
+            font-family: $my-font
+
+            font-size: 17px
+            margin-top: 20px
+
+            cursor: pointer
+            transition: .3s
+
+            &:hover
+                transition: .3s
+                background: #212529
+                color: white
+

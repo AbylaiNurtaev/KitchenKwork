@@ -64,6 +64,24 @@
     {
         "id": 6,
         "mainName": "Контакты",
-        "mainLink": "/contacts"
+        "mainLink": "/contacts",
+        "sublinks": [
+            {
+                "path": "/ourPhone",
+                "name": "+7 (778) 464-25-56"
+            },
+            {
+                "path": "vk.com",
+                "name": "Вконтакте"
+            },
+            {
+                "path": "avito.ru",
+                "name": "Авито"
+            },
+            {
+                "path": "telegram.com",
+                "name": "Телеграм"
+            }
+        ]
     }
 ]
