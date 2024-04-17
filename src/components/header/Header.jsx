@@ -77,7 +77,7 @@ function Header() {
               {
                 links.map((el) => {
                   return (
-                      <Link to={el.mainLink} key={el.id} className={burgerMenu ? s.link2 : s.nonLink}>{el.mainName}</Link>
+                      <Link to={el.mainLink} onClick={() => {setBurgerMenu(prev => !prev)}} key={el.id} className={burgerMenu ? s.link2 : s.nonLink}>{el.mainName}</Link>
                   )
                 })
               }

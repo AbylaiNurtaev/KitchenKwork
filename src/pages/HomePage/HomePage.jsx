@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './HomePage.module.sass'
-import Item from '../../components/Item/Item'
 
 
 function HomePage() {

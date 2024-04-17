@@ -1,0 +1,153 @@
+@font-face 
+    font-family: 'myFont'
+    src: '../../fonts/header.otf' format('truetype')
+
+$myFont: 'myFont'
+
+    
+.container
+    width: 100vw
+    height: 340px
+
+    background-color: #212529
+    margin-top: 50px
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+    .innerContainer
+        width: 1400px
+        height: 340px
+        display: flex
+        flex-direction: row
+
+        align-items: flex-start
+        justify-content: center
+
+        gap: 75px
+        
+        .column
+            display: flex
+            flex-direction: column
+
+            justify-content: center
+            align-items: flex-start
+
+            font-family: $myFont
+            color: white
+
+            margin-top: 20px
+            width: 155px
+
+            
+            
+            .parTexts
+                display: flex
+                flex-direction: column
+            
+
+                .parText
+                    transition: .3s
+                    cursor: pointer
+
+                    &:hover
+                        color: coral
+                        transition: .3s    
+
+
+        .logo
+            width: 155px
+            img
+                width: 100px
+
+@media (max-width: 1440px) 
+    .container
+        .innerContainer
+            width: 970px
+
+            .column
+                width: 120px
+                h2
+                    font-size: 21px
+
+                .parTexts
+                    .parText
+                        font-size: 15px
+
+@media (max-width: 1170px) 
+    .container
+        height: 250px
+        .innerContainer
+            width: 700px
+            height: 250px
+
+            .column
+                width: 120px
+                h2
+                    font-size: 17px
+
+                .parTexts
+                    .parText
+                        font-size: 12px
+
+    
+@media (max-width: 1170px) 
+    .container
+        height: 250px
+        .innerContainer
+            width: 700px
+            height: 250px
+
+            .column
+                width: 120px
+                h2
+                    font-size: 17px
+
+                .parTexts
+                    .parText
+                        font-size: 12px
+
+    
+@media (max-width: 950px) 
+    .container
+        height: auto
+        align-items: center
+        .innerContainer
+            width: 600px
+            height: auto
+
+            flex-wrap: wrap
+            align-items: flex-start
+            gap: 50px
+            .column
+                width: 150px
+
+
+@media (max-width: 625px) 
+    .container
+        .innerContainer
+            width: 400px
+
+            justify-content: flex-start
+            margin-left: 70px
+            .column
+                margin-top: 0px
+                h2
+                    font-size: 20px
+
+    
+@media (max-width: 625px) 
+    .container
+        .innerContainer
+            width: 100%
+
+            justify-content: center
+            margin-left: 0
+        
+            .column
+                margin-top: 0px
+                h2
+                    font-size: 20px

@@ -5,15 +5,15 @@
         "mainLink": "/kitchens",
         "sublinks": [
             {
-                "path": "/kitchen/sovrkuhni",
+                "path": "/kitchens/sovrkuhni",
                 "name": "Современные"
             },
             {
-                "path": "/kitchen/classic",
+                "path": "/kitchens/classic",
                 "name": "Неоклассика"
             },
             {
-                "path": "/kitchen/designs",
+                "path": "/kitchens/designs",
                 "name": "Дизайнерские"
             }
         ]

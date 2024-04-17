@@ -1,0 +1,93 @@
+.container
+    margin-top: 150px
+    overflow-x: hidden
+    width: 100vw
+    .slider
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: flex-start
+
+        width: 100vw
+        
+
+        .leftSide
+            display: flex
+            height: 700px
+            flex-direction: row
+
+            width: 1000px
+            .leftButton, .rightButton
+                display: flex
+                flex-direction: column
+
+                justify-content: center
+                align-items: center
+                cursor: pointer
+
+                position: absolute
+                background: none
+
+                z-index: 50
+                border: none
+                width: 150px
+                height: 700px
+                transition: .3s
+
+                &:hover
+                    background: #424242
+                    opacity: 0.5
+                    transition: .3s
+                img
+                    width: 50px
+                    height: 50px
+                    object-fit: cover
+                    opacity: 0.4
+                    
+                    
+            
+            .rightButton
+                background: none
+
+                transform: scaleX(-1)
+                margin-left: 850px
+                
+            .mainImage
+                object-fit: cover
+                height: 700px
+                width: 1000px
+                z-index: 0
+
+        .rightSide
+            display: flex
+            z-index: 0
+            
+            flex-direction: column
+            
+            .moreThanTriple
+                width: 250px  
+                object-fit: cover
+                height: 137px 
+                cursor: pointer
+                opacity: 0.5
+                transition: .3s
+                padding: 3px 0 0 3px
+
+                &:hover
+                    opacity: 0.8
+                    transition: .3s
+
+            .tripleRide
+                object-fit: cover
+                width: 250px
+                height: 180px
+                padding: 3px 0 0 3px
+                cursor: pointer
+                opacity: 0.5
+
+                &:hover
+                    opacity: 0.8
+                    transition: .3s
+
+            #light
+                opacity: 0.8
