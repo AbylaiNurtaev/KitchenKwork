@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../../images/logo.jpg'
 import s from './Header.module.sass'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import links from '../../links.json'
 import instIcon from '../../images/icons/inst.png'
 import phoneIcon from '../../images/icons/phone.png'
 import telegram from '../../images/icons/telegram.png'
+import burgerMenuIcon from '../../images/icons/burger.png'
 
 function Header() {
-
+  const navigate = useNavigate()
   const [logoSize, setLogoSize] = useState('big')
   const [burgerMenu, setBurgerMenu] = useState(false)
 
@@ -36,7 +37,7 @@ function Header() {
     <div className={`${s.block} ${s[logoSize]}`}>
       <div className={s.innerBlock}>
         <div className={s.logo}>
-          <img src={logo} alt="logo" className={`${s.logoImage} ${s[logoSize]}`} />
+          <img onClick={() => {navigate('/')}} src={logo} alt="logo" className={`${s.logoImage} ${s[logoSize]}`} />
         </div>
 
         <div className={s.navigation}>
@@ -71,7 +72,7 @@ function Header() {
 
         <div className={s.burgerMenu}>
           <div id='pfd' className={burgerMenu ? s.opacity : s.nonOpacity}></div>
-          <img onClick={toggleBurgerMenu} src={ burgerMenu ? "https://cdn-icons-png.flaticon.com/512/7124/7124232.png" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"} alt="-" />
+          <img onClick={toggleBurgerMenu} src={ burgerMenu ? "https://cdn-icons-png.flaticon.com/512/7124/7124232.png" : burgerMenuIcon} alt="-" />
           <div className={burgerMenu ? s.showedMenu : s.hiddenMenu}>
             <div className={s.navigation}>
               {

@@ -28,26 +28,33 @@ $my-font: 'MyFont', sans-serif
 @media ( max-width: 1440px )
     .block
         .innerBlock
-            width: 70%
+            width: 950px
             justify-content: space-between
+            overflow: hidden
             
             .logo
                 img
                     object-fit: cover
                     height: 77px
+                    border-bottom: 3px
                 .big
                     height: 90px
-                    width: 90px 
+                    width: 100px 
+
+                .small
+                    width: 75px
+                    height: 66.5px
+
                 
 
 
             .navigation
                 gap: 5%
+                width: 710px
                 
                 .linkContainer
                     .link
-                        font-size: clamp(12px, 1.2vw, 36px)
-
+                        font-size: 15px
 
                         
             .contacts
@@ -199,7 +206,7 @@ $my-font: 'MyFont', sans-serif
     .block
         width: 100vw
         .innerBlock
-            width: 100%
+            width: 95%
             .logo
                 .big
                     width: 95px    

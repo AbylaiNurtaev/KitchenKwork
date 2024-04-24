@@ -1,0 +1,139 @@
+@font-face 
+    font-family: 'MyFont'
+    src: url("../../fonts/header.otf") format('truetype')
+
+$my-font: 'MyFont'
+    
+.container
+    width: 100vw
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+    margin-top: 70px
+    .innerContainer
+        display: flex
+        flex-direction: column
+
+        justify-content: center
+        align-items: center
+        
+        width: 1350px
+        font-family: $my-font
+        padding-bottom: 50px
+
+        .topTexts
+            width: 100%
+            text-align: center
+
+
+        .topDescription
+            margin-top: 50px
+            display: flex
+            flex-direction: row
+
+            justify-content: space-between
+            align-items: center
+
+            width: 100%
+            .left
+                width: 50%
+            
+            .right
+                width: 40%
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 350px
+
+
+        .gallery
+            margin-top: 50px
+            width: 100%
+            display: flex
+            flex-direction: row
+
+            flex-wrap: wrap
+            gap: 3%
+
+            justify-content: space-between
+            
+
+            img
+                width: 30%
+                margin-top: 20px
+
+
+        .bottomSide
+            display: flex
+            flex-direction: row
+
+            justify-content: space-between
+            align-items: center
+
+            width: 100%
+            margin-top: 50px
+
+            .left
+                width: 45%
+
+                img
+                    width: 100%
+
+            .right
+                width: 45%
+
+
+@media (max-width: 1370px) 
+    .container
+        .innerContainer
+            width: 1000px
+
+
+@media (max-width: 1050px) 
+    .container
+        .innerContainer
+            width: 760px
+
+@media (max-width: 780px)
+
+    .container
+        .innerContainer
+            width: 500px
+            .topDescription
+                flex-direction: column
+                .left
+                    order: 1
+                    width: 90%
+
+                .right
+                    order: 0
+                    width: 90%
+
+            .gallery
+                img
+                    width: 46%
+
+            .bottomSide
+                flex-direction: column
+
+                .left
+                    width: 90%
+                    img
+                        object-fit: cover
+                        height: 300px
+
+                .right
+                    width: 90%
+
+
+@media (max-width: 530px) 
+    .container
+        .innerContainer
+            width: 350px
+
+            .gallery
+                justify-content: center
+                img
+                    width: 95%

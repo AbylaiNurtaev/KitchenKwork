@@ -4,18 +4,22 @@
 
 $myFont: 'myFont'
 
+
     
 .container
     width: 100vw
     height: 340px
 
     background-color: #212529
-    margin-top: 50px
 
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+
+
+    p
+        line-height: 20px
 
 
     .innerContainer
@@ -52,6 +56,7 @@ $myFont: 'myFont'
                 .parText
                     transition: .3s
                     cursor: pointer
+                    
 
                     &:hover
                         color: coral
@@ -60,8 +65,9 @@ $myFont: 'myFont'
 
         .logo
             width: 155px
+            margin-top: 90px
             img
-                width: 100px
+                width: 150px
 
 @media (max-width: 1440px) 
     .container
@@ -93,10 +99,14 @@ $myFont: 'myFont'
                     .parText
                         font-size: 12px
 
+            .logo
+                img
+                    width: 100px
     
 @media (max-width: 1170px) 
     .container
-        height: 250px
+        height: 280px
+        justify-content: flex-start
         .innerContainer
             width: 700px
             height: 250px
@@ -124,6 +134,11 @@ $myFont: 'myFont'
             gap: 50px
             .column
                 width: 150px
+
+            .logo
+                img
+                    width: 120px
+                    margin-top: -20px
 
 
 @media (max-width: 625px) 

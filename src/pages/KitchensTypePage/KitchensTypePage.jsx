@@ -25,6 +25,7 @@ function KitchensTypePage() {
 
   useEffect(() => {
     defineMainText();
+    window.scrollTo(0, 0)
 
     // Dynamically import the image
     

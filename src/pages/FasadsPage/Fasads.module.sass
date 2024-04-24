@@ -1,0 +1,273 @@
+@font-face 
+    font-family: 'myFont'
+    src: url('../../fonts/header.otf')
+
+$my-font: 'myFont'
+.container 
+    margin-top: 70px
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+
+    width: 100vw
+    overflow-x: hidden
+
+    background-color: #edeeef
+    font-family: $my-font
+
+
+    .mainText
+        margin-top: 50px
+
+    .middleSide
+        display: flex
+        flex-direction: row
+
+        justify-content: space-between
+        align-items: center
+
+        width: 1350px
+        margin-top: 70px
+        
+
+        h1
+            font-size: 30.5px
+
+        .left
+            width: 500px
+            order: 0
+
+        .parBlock
+            p
+                font-size: 19px
+                line-height: 30px
+                width: 110%
+        
+        button
+            width: 220px
+            height: 55px
+
+            background-color: #212529
+            color: white
+
+            border: none
+            font-size: 16px
+
+            cursor: pointer
+            margin-top: 15px
+
+        .right
+            order: 1
+            img
+                width: 700px
+    
+
+    .gallery
+        padding-bottom: 100px
+        margin-top: 150px
+        display: flex
+        flex-direction: row
+
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+
+        width: 1450px
+        gap: 100px
+        div
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+
+            width: 350px
+
+            img
+                width: 350px
+
+
+            p
+                font-size: 20px
+
+    .bottomWrapper
+        width: 100vw
+        background: white
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        padding-bottom: 50px
+        .bottomSide
+            background: white
+            font-family: $my-font
+            display: flex
+            flex-direction: row
+
+            justify-content: space-between
+            align-items: center
+            width: 1350px
+
+            gap: 50px
+            .left
+                img
+                    width: 500px
+                    margin-top: -50px
+
+            .right
+                width: 650px
+                display: flex
+                flex-direction: column
+
+                justify-content: center
+                align-items: flex-start
+                button
+                    width: 220px
+                    height: 55px
+
+                    background-color: #212529
+                    color: white
+
+                    border: none
+                    font-size: 16px
+        
+                    cursor: pointer
+                    margin-top: 15px
+
+
+@media (max-width: 1400px) 
+    .container
+        .middleSide
+            width: 950px
+            margin-top: 50px
+
+            .left
+                width: 400px
+                .parBlock
+                    p
+                        width: 100%
+                h1
+                    font-size: 28px
+                p
+                    font-size: 17px
+        
+            .right
+                img
+                    width: 450px
+
+
+        .gallery
+            width: 950px
+            img
+                width: 250px
+            
+
+
+        .bottomWrapper
+            .bottomSide
+                width: 950px
+                .left
+                    img
+                        width: 500px
+
+                .right
+                    width: 400px
+
+
+@media (max-width: 970px) 
+    .container
+        .middleSide
+            flex-direction: column
+
+            .left
+                order: 1
+                width: 500px
+                text-align: center
+            .right
+                order: 0
+                img
+                    width: 600px
+
+        .gallery
+            width: 600px
+        .bottomWrapper
+
+            .bottomSide
+                flex-direction: column
+                gap: 0
+                .left
+                    img
+                        object-fit: cover
+                        width: 600px
+                        height: 500px
+
+                .right
+                    width: 600px
+
+    
+    
+@media (max-width: 650px) 
+    .container
+        .middleSide
+            .left
+                width: 400px
+                text-align: center
+            .right
+                order: 0
+                img
+                    width: 430px
+
+        .gallery
+            width: 440px
+            gap: 40px
+            img
+                width: 200px
+
+        .bottomWrapper
+
+            .bottomSide 
+                width: 440px
+                .left
+                    img
+                        width: 430px
+                        height: 300px
+                        margin-top: 50px
+
+                .right
+                    width: 430px
+
+@media (max-width: 450px) 
+    .container
+        .middleSide
+            .left
+                width: 320px
+                text-align: center
+
+            .right
+                order: 0
+                img
+                    width: 350px
+
+        .gallery
+            width: 300px
+            img
+                width: 290px
+        
+        .bottomWrapper
+
+            .bottomSide
+                width: 300px
+                .left
+                    img
+                        width: 300px
+                        height: 200px
+                        margin-top: 50px
+
+                .right
+                    width: 300px
+
+
+                

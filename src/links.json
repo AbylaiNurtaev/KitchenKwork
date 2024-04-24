@@ -29,19 +29,19 @@
         "mainLink": "/furniture",
         "sublinks": [
             {
-                "path": "/furniture/shkafy",
+                "path": "/furniture/HardWrobes",
                 "name": "Шкафы"
             },
             {
-                "path": "/kitchen/wardrobe",
+                "path": "/furniture/cloakrooms",
                 "name": "Гардеробные"
             },
             {
-                "path": "/kitchen/tv-zone",
+                "path": "/furniture/tv-zone",
                 "name": "ТВ-зоны"
             },
             {
-                "path": "/kitchen/children",
+                "path": "/furniture/children",
                 "name": "Детские"
             }
         ]

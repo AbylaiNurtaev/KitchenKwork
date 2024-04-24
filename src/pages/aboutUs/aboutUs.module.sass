@@ -1,0 +1,170 @@
+@font-face 
+    font-family: 'MyFont'
+    src: url('../../fonts/header.otf') format('truetype')
+
+$my-font: 'MyFont'    
+.container
+    width: 100vw
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+
+    font-family: $my-font
+    margin-top: 100px
+
+    padding-bottom: 100px
+    .innerContainer
+        width: 1350px
+        display: flex
+        flex-direction: column
+
+        justify-content: center
+        align-items: center
+
+        .mainText
+            font-size: 30px
+            font-weight: bolder
+
+        .middleText
+
+            width: 100%
+            display: flex
+            flex-direction: row
+
+            justify-content: space-between
+            align-items: flex-start
+
+            margin-top: 50px
+
+            p
+                font-size: 19px
+                width: 45%
+
+            img
+                width: 50%
+
+
+
+        .bottomSide
+            display: flex
+            flex-direction: row
+
+            justify-content: space-between
+            align-items: center
+
+            width: 100%
+            .left
+                width: 40%
+
+            .right
+                width: 50%
+                h1
+                    margin: 0
+
+                p
+                    font-size: 19px
+
+@media ( max-width: 1400px )
+    .container
+        .innerContainer
+            width: 950px
+
+            .middleText
+                align-items: center
+                p
+                    font-size: 17px
+
+
+            .bottomSide
+                margin-top: 50px
+
+                .right
+                    p
+                        font-size: 17px
+    
+
+@media (max-width: 970px) 
+    .container
+        .innerContainer
+            width: 780px
+            
+            .middleText
+                flex-direction: column
+
+                .left
+                    order: 1
+                    width: 100%
+                .right
+                    order: 0
+                    width: 100% 
+
+            .bottomSide
+                .right
+                    p
+                        font-size: 16px
+                        line-height: 25px
+
+
+@media (max-width: 800px) 
+    .container
+        .innerContainer
+            width: 600px
+            
+            .middleText
+                flex-direction: column
+
+                
+
+            .bottomSide
+                flex-direction: column
+                .right
+                    width: 100%
+
+                    p
+                        
+                        font-size: 16px
+                        line-height: 25px
+
+                .left
+                    width: 100%
+
+                .right
+                    margin-top: 20px
+
+    
+@media (max-width: 610px) 
+    .container
+        .innerContainer
+            width: 450px
+            
+            .middleText
+                flex-direction: column
+
+                .left
+                    order: 1
+                    width: 100%
+                .right
+                    order: 0
+                    width: 100% 
+
+            .bottomSide
+                flex-direction: column
+                .right
+                    width: 100%
+                    p
+                        
+                        font-size: 16px
+                        line-height: 25px
+
+                .left
+                    width: 100%
+
+@media ( max-width: 470px )
+    .container
+        .innerContainer
+            width: 350px
+            
+    
+                

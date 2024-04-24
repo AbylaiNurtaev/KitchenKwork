@@ -1,0 +1,301 @@
+@font-face 
+    font-family: 'MyFont'
+    src: url('../../fonts/header.otf') format('truetype')
+
+$my-font: 'MyFont'  
+
+@mixin centerFlex
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+    
+.container
+    width: 100vw
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+
+    font-family: $my-font
+    margin-top: 100px
+
+
+    .mainText
+        width: 100vw
+        height: 300px
+
+        background: #EDEEEF
+        @include centerFlex
+        
+
+        .wrapper
+            width: 1350px
+            @include centerFlex
+
+            text-align: center
+
+
+
+    .contacts
+        width: 100vw
+        height: 500px
+
+        background: white
+        @include centerFlex
+        
+        .wrapper
+            width: 1350px
+            @include centerFlex
+            flex-direction: row
+
+            justify-content: space-between
+
+            
+            .left
+                width: 50%
+            
+            .right
+                width: 35%
+
+
+    .numerable
+        width: 100vw
+        height: 300px
+        background: #EDEEEF
+
+        @include centerFlex
+        
+        .wrapper
+            width: 1350px
+            @include centerFlex
+            
+            flex-direction: row
+            justify-content: space-around
+                
+            .block
+                @include centerFlex
+                
+                .mainNumber
+                    font-family: Arial, Helvetica, sans-serif
+                    font-weight: bolder
+
+                    border: 2px solid black
+                    border-radius: 50%
+
+                    width: 50px
+                    height: 50px
+
+                    @include centerFlex
+                    
+                .parText
+                    font-size: 20px
+                    width: 250px
+                    margin: 0
+                    text-align: center
+
+
+    .bottomImage
+        background-image: url('https://fason-kuhni.ru/wp-content/uploads/2022/09/main-min.jpg')
+        width: 100vw
+        height: 1000px
+
+        position: relative
+        filter: brightness(30%)
+        
+    .bottomSide
+        position: absolute
+        font-family: Arial, Helvetica, sans-serif
+        font-weight: bolder
+        color: white
+
+        margin-top: 250px
+        width: 1250px
+        margin-top: 1070px
+
+        @include centerFlex
+        align-items: flex-start
+        h1
+            width: 100%
+            font-size: 40px
+            text-align: center
+
+        p
+            font-size: 25px
+            margin-top: 70px
+            width: 100%
+        
+        .p_2
+            text-align: center
+        .p_3 
+            text-align: right
+        .p_5
+            text-align: center
+        .p_6 
+            text-align: right
+
+        .btnWrapper
+            width: 100%
+            @include centerFlex
+            padding-top: 55px
+            button
+                background: none
+                border: 1px solid white
+                font-weight: bolder
+                transition: .3s
+                
+
+                &:hover
+                    background: white
+                    color: black
+                    transition: .3s
+
+
+@media ( max-width: 1400px )
+    .container
+        .mainText
+            .wrapper
+                width: 950px
+
+        .contacts
+            .wrapper
+                width: 950px
+
+        .numerable
+            .wrapper
+                width: 950px
+
+                .block
+                    .parText
+                        width: 200px
+                        font-size: 17px
+
+        .bottomSide
+            width: 950px
+
+
+@media  ( max-width: 980px )
+    .container
+        .mainText
+            .wrapper
+                width: 650px
+
+        .contacts
+            .wrapper
+                width: 650px
+
+        .numerable
+            .wrapper
+                width: 650px
+
+                .block
+                    .parText
+                        width: 150px
+                        font-size: 13px
+
+        .bottomSide
+            width: 650px
+
+            h1
+                font-size: 25px
+                margin-top: 100px
+
+            p
+                font-size: 21px
+
+
+
+@media  ( max-width: 700px )
+    .container
+        .mainText
+            .wrapper
+                width: 460px
+
+        .contacts
+            height: 1200px
+            .wrapper
+                width: 460px
+                
+                flex-direction: column
+                gap: 20px
+                
+                
+                .left
+                    width: 95%
+
+                .right
+                    width: 95%
+
+        .numerable
+            height: 600px
+            .wrapper
+                flex-direction: column
+                white-space: nowrap
+                
+                width: 460px
+                .block
+                    width: 50%
+
+                    .mainNumber
+                        width: 60px
+                        height: 60px
+                    .parText
+                        width: 300px
+                        font-size: 16px
+
+        .bottomSide
+            width: 460px
+            margin-top: 2000px
+
+            h1
+                font-size: 25px
+                margin-top: 100px
+
+            p
+                font-size: 21px
+                text-align: center
+                margin-top: 50px
+
+            .p_3
+                text-align: center
+            .p_5
+                text-align: center
+            .p_6
+                text-align: center
+
+            .btnWrapper
+                padding-top: 20px
+
+@media ( max-width: 465px )
+    .container
+        .mainText
+            .wrapper
+                width: 360px
+                h1
+                    font-size: 17px
+                p
+                    font-size: 15px
+
+
+        .contacts
+            height: 900px
+            .wrapper
+                width: 360px
+                gap: 35px
+
+
+        .numerable
+            .wrapper
+                width: 360px
+
+
+        .bottomImage
+            height: 900px
+        .bottomSide
+            width: 360px
+            margin-top: 1700px
+
+            p
+                font-size: 15px

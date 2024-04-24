@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import s from './HomePage.module.sass'
 
 
 function HomePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
   return (
     <div className={s.container}>
       <img src="https://fason-kuhni.ru/wp-content/uploads/2021/04/hero-min.jpg" alt="photo" className={s.mainPhoto} />

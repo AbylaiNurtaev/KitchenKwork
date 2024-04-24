@@ -8,11 +8,17 @@ import { useNavigate } from "react-router-dom";
 function KitchensPage() {
   const navigate = useNavigate()
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
   return (
     <div className={s.container}>
       <div className={s.mainText}>
         <h1>Кухни</h1>
       </div>
+      <div className={s.middle}>
+
       <div className={s.anotherBlocks}>
         <div className={s.anotherBlock} onClick={() => navigate('/kitchens/sovrkuhni')}>
           <img src="https://fason-kuhni.ru/wp-content/uploads/2021/03/moderna-min-600x600.jpg" alt="" />
@@ -27,6 +33,8 @@ function KitchensPage() {
           <h1>Дизайнерские кухни</h1>
         </div>
       </div>
+      </div>
+      
       <div> 
         <div className={s.blocks}>
           <Prewie type={"Дизайнерские кухни"} letter={"д"} limit={7} isParent={true}/>

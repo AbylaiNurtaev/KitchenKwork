@@ -1,3 +1,22 @@
+
+@keyframes slideToLeft
+    0%
+        transform: translateX(-100%)
+    100%
+        transform: translateX(0)
+
+@keyframes slideToRight
+    0%
+        transform: translateX(100%)
+    100%
+        transform: translateX(0%)
+
+@font-face 
+    font-family: 'MyFont'
+    src: url('../../fonts/header.otf') format('truetype')
+
+$my-font: 'MyFont'
+    
 .container
     margin-top: 150px
     overflow-x: hidden
@@ -15,6 +34,8 @@
             display: flex
             height: 700px
             flex-direction: row
+            overflow: hidden
+            position: relative
 
             width: 1000px
             .leftButton, .rightButton
@@ -45,6 +66,7 @@
                     opacity: 0.4
                     
                     
+                    
             
             .rightButton
                 background: none
@@ -57,6 +79,13 @@
                 height: 700px
                 width: 1000px
                 z-index: 0
+
+            // .animatedLeft
+            //     animation: slideToLeft .1s ease forwards
+
+            // .animatedRight
+            //     animation: slideToRight .1s ease forwards
+                
 
         .rightSide
             display: flex
@@ -91,3 +120,74 @@
 
             #light
                 opacity: 0.8
+
+    
+    .lowContainer
+        width: 100vw
+        display: flex
+        flex-direction: column
+
+        justify-content: center
+        align-items: center
+
+        margin-top: 50px
+
+        .inner
+            display: flex
+            flex-direction: row
+
+            justify-content: space-between
+            align-items: flex-start
+            width: 1290px
+
+            .leftWrapper
+                display: flex
+                flex-direction: row
+            
+
+            .priceBlock
+                display: flex
+                flex-direction: column
+
+                justify-content: center
+                align-items: flex-start
+
+                .price
+                    font-family: $my-font
+
+                button
+                    background-color: #960000
+                    color: white
+
+                    font-family: $my-font
+                    width: 240px
+                    height: 45px
+
+                    border: none
+                    font-size: 19px
+                    cursor: pointer
+                    transition: .3s
+
+                    &:hover
+                        border: 1px solid #960000
+                        background: white
+                        color: #960000
+                        transition: .3s
+
+
+            .parText
+                width: 700px
+                font-family: $my-font
+                font-size: 19px
+                margin-left: 50px
+
+            .iconsBlock
+                display: flex
+                flex-direction: row
+
+                flex-wrap: wrap
+                width: 260px
+
+
+                img
+                    width: 85px
