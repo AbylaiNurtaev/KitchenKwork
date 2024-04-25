@@ -1,0 +1,101 @@
+@font-face 
+    font-family: 'MyFont'
+    src: url('../../fonts/header.otf') format('truetype')
+
+$my-font: 'MyFont'
+    
+.container
+    display: flex
+    flex-direction: row
+
+    justify-content: center
+    align-items: flex-start
+
+    width: 1350px
+    font-family: $my-font
+
+
+    gap: 50px
+    .left
+        display: flex
+        flex-direction: row
+
+        justify-content: center
+        align-items: center
+        .prew
+            display: flex
+            flex-direction: row
+
+            justify-content: space-between
+            align-items: center
+            .leftButton, .rightButton
+                display: flex
+                flex-direction: column
+
+                justify-content: center
+                align-items: center
+                cursor: pointer
+
+                position: absolute
+                background: none
+
+                z-index: 50
+                border: none
+                width: 80px
+                height: 333px
+                transition: .3s
+
+                &:hover
+                    background: #424242
+                    opacity: 0.5
+                    transition: .3s
+                img
+                    width: 50px
+                    height: 50px
+                    object-fit: cover
+                    opacity: 0.4
+                    
+            img
+                width: 500px
+                height: 333px
+                object-fit: cover   
+                    
+            
+            .rightButton
+                background: none
+
+                transform: scaleX(-1)
+                margin-left: 420px
+
+            img
+                width: 500px
+                z-index: -100
+
+        .rulet
+            display: flex
+
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            img
+                width: 100px
+                object-fit: cover
+                height: 64px
+                padding: 0 0 3px 3px
+                opacity: 0.4
+                transition: .3s
+                cursor: pointer
+
+                &:hover
+                    opacity: 1
+                    transition: .3s
+
+            #light
+                opacity: 0.8
+    .right
+        width: 600px
+        .title
+            margin-top: 5px
+        .par
+            width: 80%

@@ -14,7 +14,7 @@ import ChildrenPage from "./pages/ChildrenPage/ChildrenPage";
 import { useEffect } from "react";
 import AboutUs from "./pages/aboutUs/aboutUs";
 import ForDesignerPage from "./pages/forDesignerPage/ForDesignerPage";
-
+import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout/>}>
@@ -41,7 +42,7 @@ function App() {
           <Route path="/furniture/cloakrooms" element={<Cloakrooms/>}/>
           <Route path="/furniture/tv-zone" element={<TvZonePage/>}/>
           <Route path="/furniture/children" element={<ChildrenPage/>}/>
-          <Route path="/portfolio" element={<ChildrenPage/>}/>
+          <Route path="/portfolio" element={<PortfolioPage/>}/>
           <Route path="/aboutUs" element={<AboutUs/>}/>
           <Route path="/designers" element={<ForDesignerPage/>}/>
         </Route>

@@ -13,7 +13,6 @@ function Model() {
 
 
     useEffect(() => {
-        window.scrollTo(0, 0)
         const fetchImages = async () => {
             try {
                 const prew = await import(`../../images/кухни/${type} кухни/${model}/prew.jpg`);
@@ -40,14 +39,6 @@ function Model() {
 
 
     const changeIndex = (e, index) => {
-        // let elem = e.currentTarget.parentNode.querySelector('img:nth-child(2)');
-        // elem.classList.remove(s.animatedLeft)   
-        // elem.classList.remove(s.animatedRight)
-        // if(index === -1){
-        //     elem.classList.add(s.animatedLeft)
-        // }else if(index === 1){
-        //     elem.classList.add(s.animatedRight)
-        // }
         if (currentImage + index == imageList.length) {
             setCurrentImage(0)
         } else if (currentImage + index < 0) {
